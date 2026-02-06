@@ -108,7 +108,7 @@
       showStatus('Initiating payment... Please wait.', '');
 
       try {
-        const response = await fetch('https://mpesa-stk-pyt.onrender.com/api/stk-push', {
+        const response = await fetch('https://mpesa-stk-backend-ccgg.onrender.com', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ phone, amount })
